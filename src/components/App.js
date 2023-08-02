@@ -1,9 +1,6 @@
-import { Profile } from "./Profile";
-import user from '../user.json';
+import { Profile } from "./profile/Profile";
+import profileUsers from '../user.json';
 export const App = () => {
-  return 
-    <div>
-      <Profile items={user} />
-    </div>
+  return <div><Profile items={profileUsers} /></div>
   
 };
