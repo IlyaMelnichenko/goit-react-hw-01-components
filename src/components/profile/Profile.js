@@ -1,4 +1,4 @@
-import {Container} from './Profilestyled'
+import {Container} from './Profile.styled'
 
 
 export const Profile = ({ items: { stats, location, avatar, tag, username } }) => {
