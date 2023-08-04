@@ -1,16 +1,18 @@
 import { Statisticitem } from "components/Statistics/StatisticItem"
-
+import { Container } from 'components/profile/Profile.styled'
+import { Item, List } from "./Statistic.styled";
 export const Statistics = ({stats,tittle})=>{
     
     
-    return (<section className="statistics">
-    <h2 className="title">{tittle}</h2>
-    <ul className="stat-list">
+  return (<section className="statistics">
+        <Container> <h2 className="title">{tittle}</h2>
+    <List className="stat-list">
      {stats.map(stat=>(
-         <li className="item" key = {stat.id}>
+         <Item className="item" key = {stat.id}>
             <Statisticitem stats = {stat}/>
-         </li>
+         </Item>
      ))}
-    </ul>
+    </List></Container>
+   
   </section>);
 };

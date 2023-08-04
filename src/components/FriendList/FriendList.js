@@ -1,16 +1,19 @@
+import { Item } from "./FirendList.styled"
 import { FriendListItem } from "./FriendListItem"
-
+import { Container } from "components/profile/Profile.styled"
 export const  FriendList = ({friends})=>{
-    return(
+    return (
+        <Container>
         <ul className="friend-list">
             {friends.map(friend=>
-            <li className="item" key={friend.id}>
+            <Item className="item" key={friend.id}>
             <FriendListItem avatar = {friend.avatar} name = {friend.name} isOnline={friend.isOnline}/>
-            </li>
+            </Item>
             
             )
             }
-        </ul>
+            </ul>
+        </Container>
     )
 
 }

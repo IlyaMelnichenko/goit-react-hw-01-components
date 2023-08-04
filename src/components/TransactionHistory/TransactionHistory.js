@@ -1,7 +1,9 @@
 import { TransactionTd } from "./TransactionTd"
+import { Container } from 'components/profile/Profile.styled'
 export const TransactionHistory = ({items})=>{
-    return (
-    <table className="transaction-history">
+  return (
+    <Container>
+      <table className="transaction-history">
     <thead>
       <tr>
         <th>Type</th>
@@ -18,7 +20,9 @@ export const TransactionHistory = ({items})=>{
        
     )}
     </tbody>
-    </table>)
+    </table>
+      </Container>)
+    
   
   
 }
