@@ -23,11 +23,14 @@ export const Description = styled.div`
 `
 export const List = styled.ul`
     display:flex;
-    gap:12px;
+    
 
 `
 export const Item = styled.li`
     display:flex;
     flex-direction: column;
-
+    border: 1px solid;
+    padding: 5px 10px;
+    width:90px;
+    text-align:center;
 `
