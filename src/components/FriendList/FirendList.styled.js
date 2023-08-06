@@ -9,10 +9,10 @@ export const Item = styled.li`
 export const Span = styled.span`
 border-radius: 50%;
 background-color: ${props => {
-    switch (props.isOnline) {
-        case false:
+    switch (props.isonline) {
+        case 'false':
             return 'red';
-        case true:
+        case 'true':
             return 'green';
     }
 }};

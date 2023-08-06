@@ -1,9 +1,9 @@
 import { Span } from "./FirendList.styled"
 
-export const FriendListItem = ({avatar,name,isOnline})=>{
-    console.log({ isOnline })
+export const FriendListItem = ({avatar,name,isonline})=>{
+    console.log(isonline)
     return <>
-        <Span isOnline = {isOnline} className="status"></Span>
+        <Span isonline = {isonline} className="status"></Span>
         <img className="avatar" src={avatar} alt="User avatar" width="48" />
         <p className="name">{name}</p>
         </>
